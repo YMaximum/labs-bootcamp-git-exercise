@@ -25,3 +25,9 @@ enum LogEnum {
   }
   
   printHelloWorld();
+  
+  function printErrors() {
+  
+  }
+  
+  printErrors();
