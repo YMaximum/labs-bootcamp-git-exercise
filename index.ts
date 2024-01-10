@@ -14,7 +14,13 @@ enum LogEnum {
       return Logger.logger;
     }
     
-    log(logType: LogEnum, messages: string) {
+    log(logType: LogEnum, messages: string | string[]) {
+      if (Array.isArray(messages)) {
+        messages.forEach((message) => {
+          console.log(logType + message + this.reset);
+        });
+        return;
+      }
       console.log(logType + messages + this.reset);
     }
   }
