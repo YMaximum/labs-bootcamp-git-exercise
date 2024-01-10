@@ -21,7 +21,7 @@ enum LogEnum {
         });
         return;
       }
-      console.log(logType + messages + this.reset);
+      console.log(Date.now() + logType + messages + this.reset);
     }
   }
   
