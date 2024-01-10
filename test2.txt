@@ -1,1 +1,2 @@
 Halo ini scenario 1 file 2
+Halo ini changes in different commit hash
