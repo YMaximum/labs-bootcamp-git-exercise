@@ -33,7 +33,8 @@ enum LogEnum {
   printHelloWorld();
   
   function printErrors() {
-  
+    const logger = Logger.getInstance();
+    logger.log(LogEnum.error, ['Error message 1', 'Error message 2']);
   }
   
   printErrors();
